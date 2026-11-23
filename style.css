@@ -48,7 +48,7 @@ h1, h2, h3, .logo {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 8%;
-    background: rgba(43, 0, 12, 0.9);
+    background: rgba(43, 0, 12, 0.92);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
@@ -224,6 +224,103 @@ nav a:hover {
     font-size: 1.05rem;
 }
 
+/* Vertical Stacked Feature Rows (Image Left, Text Right) */
+.feature-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 2.5rem;
+    align-items: center;
+    background: #3d0011;
+    border: 1px solid rgba(148, 22, 0, 0.6);
+    border-radius: 14px;
+    padding: 1.5rem;
+}
+
+.feature-img {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(245, 210, 0, 0.3);
+    aspect-ratio: 16 / 11;
+}
+
+.feature-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.feature-row:hover .feature-img img {
+    transform: scale(1.04);
+}
+
+.step-tag {
+    display: inline-block;
+    color: #F5D200;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.6rem;
+}
+
+.feature-text h3 {
+    font-size: 1.65rem;
+    margin-bottom: 0.85rem;
+    color: #ffffff;
+}
+
+.feature-text p {
+    color: #ebd3d9;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.text-link {
+    color: #F5D200;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* Dumb Origin Story Box */
+.story-box {
+    max-width: 820px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #61001C 0%, #3d0011 100%);
+    border: 1px solid rgba(245, 210, 0, 0.35);
+    border-radius: 14px;
+    padding: 3rem;
+}
+
+.story-box h2 {
+    text-align: left;
+    font-size: 2.1rem;
+    margin-bottom: 1.25rem;
+}
+
+.story-box p {
+    color: #f3dfe4;
+    font-size: 1.05rem;
+    margin-bottom: 1.1rem;
+}
+
+.story-box p:last-child {
+    margin-bottom: 0;
+}
+
 /* Service Cards (#61001C & #941600 Surfaces) */
 .services-grid {
     display: grid;
@@ -318,35 +415,6 @@ nav a:hover {
     color: #1f0009;
 }
 
-/* Photo Grid */
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.photo-card {
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid rgba(245, 210, 0, 0.3);
-    background: #1a0007;
-    aspect-ratio: 16 / 10;
-}
-
-.photo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.35s ease;
-}
-
-.photo-card:hover img {
-    transform: scale(1.04);
-}
-
 /* Contact Form */
 .contact-section {
     max-width: 680px;
@@ -417,5 +485,12 @@ footer {
     }
     .hero h1 {
         font-size: 2.25rem;
+    }
+    .feature-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .story-box {
+        padding: 2rem 1.5rem;
     }
 }
