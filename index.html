@@ -23,7 +23,7 @@
             <a href="#work">What We Do</a>
             <a href="#story">Origin Story</a>
             <a href="#packages">Pricing</a>
-            <a href="tel:12345678910" class="phone-link">1-234-567-8910</a>
+            <span class="phone-link">1-234-567-8910</span>
             <a href="#book" class="btn-nav">Book Detail</a>
         </nav>
     </header>
@@ -36,7 +36,7 @@
             <p>Precision multi-stage paint correction, deep interior restoration, and multi-year ceramic protection for daily drivers, exotics, and motorcycles.</p>
             <div class="hero-buttons">
                 <a href="#book" class="btn-primary">Lock In Your Spot</a>
-                <a href="tel:12345678910" class="btn-secondary">Call 1-234-567-8910</a>
+                <span class="btn-secondary" style="cursor: default;">Call 1-234-567-8910</span>
             </div>
         </div>
     </section>
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <!-- 3. Pricing Section (Now below Photos & Story) -->
+    <!-- 3. Pricing Section -->
     <section id="packages" class="section">
         <h2>Detailing Packages</h2>
         <p class="section-sub">Transparent flat-rate tiers with zero hidden shop fees.</p>
@@ -140,16 +140,17 @@
         </div>
     </section>
 
+    <!-- Display-Only Mockup Contact Form -->
     <section id="book" class="section alt-band">
         <div class="contact-section">
             <h2>Request a Mobile Appointment</h2>
-            <p class="section-sub">Prefer to talk directly? Call or text <strong>1-234-567-8910</strong> anytime.</p>
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo Form: On a live client site, this routes straight to the business owner\'s phone and email!');">
-                <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number (e.g., 1-234-567-8910)" required>
-                <input type="text" placeholder="Vehicle Year, Make &amp; Model (e.g., 2023 Corvette C8)" required>
-                <textarea rows="3" placeholder="Which package are you interested in?"></textarea>
-                <button type="submit" class="btn-primary">Reserve Appointment</button>
+            <p class="section-sub">Display-only booking form &bull; Sample line: <strong>1-234-567-8910</strong></p>
+            <form class="contact-form" onsubmit="return false;">
+                <input type="text" placeholder="Your Name (Display Only)" disabled>
+                <input type="tel" placeholder="Phone Number: 1-234-567-8910" disabled>
+                <input type="text" placeholder="Vehicle Year, Make &amp; Model" disabled>
+                <textarea rows="3" placeholder="Which package are you interested in?" disabled></textarea>
+                <button type="button" class="btn-primary" style="opacity: 0.7; cursor: not-allowed;" disabled>Reserve Appointment (Demo Display)</button>
             </form>
         </div>
     </section>
