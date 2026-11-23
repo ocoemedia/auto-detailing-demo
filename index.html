@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Site Auto Detailing | Paint Correction & Ceramic Coating</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Demo Banner linking back to Oliver Coe Media -->
+    <div class="demo-bar">
+        <span>CONCEPT BUILD BY <strong>OLIVER COE MEDIA</strong></span>
+        <a href="https://github.io">← Back to Agency</a>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">EXAMPLE SITE <span>DETAILING</span></div>
+        <nav>
+            <a href="#packages">Packages</a>
+            <a href="#results">Finish Gallery</a>
+            <a href="tel:12345678910" class="phone-link">1-234-567-8910</a>
+            <a href="#book" class="btn-nav">Book Detail</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg-wash"></div>
+        <div class="hero-content">
+            <div class="pill">MOBILE STUDIO &bull; PAINT CORRECTION &bull; CERAMIC</div>
+            <h1>Showroom Gloss Delivered Straight to Your Driveway.</h1>
+            <p>Precision multi-stage paint correction, deep interior restoration, and multi-year ceramic protection for daily drivers, exotics, and motorcycles.</p>
+            <div class="hero-buttons">
+                <a href="#book" class="btn-primary">Lock In Your Spot</a>
+                <a href="tel:12345678910" class="btn-secondary">Call 1-234-567-8910</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="section">
+        <h2>Detailing Packages</h2>
+        <p class="section-sub">Transparent flat-rate tiers with zero hidden shop fees.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Express Full Reset</h3>
+                <div class="price">$185 <span>Sedan / Coupe</span></div>
+                <ul>
+                    <li>pH-neutral foam bath & two-bucket hand wash</li>
+                    <li>Deep wheel barrel & brake caliper decon</li>
+                    <li>Full interior vacuum, steam & UV matte dressing</li>
+                    <li>6-month hydrophobic paint sealant</li>
+                </ul>
+                <a href="#book" class="btn-outline">Book Express</a>
+            </div>
+            <div class="service-card featured">
+                <div class="badge">SIGNATURE FINISH</div>
+                <h3>Correction + 3-Year Ceramic</h3>
+                <div class="price">$650 <span>Full Package</span></div>
+                <ul>
+                    <li>Iron decontamination & clay bar treatment</li>
+                    <li>Single-stage machine polish (removes 75%+ swirls)</li>
+                    <li>3-year professional-grade ceramic coating</li>
+                    <li>Full interior extraction & leather conditioning</li>
+                </ul>
+                <a href="#book" class="btn-primary">Book Signature</a>
+            </div>
+            <div class="service-card">
+                <h3>Interior Restoration</h3>
+                <div class="price">$220 <span>Deep Clean</span></div>
+                <ul>
+                    <li>Hot-water carpet & upholstery extraction</li>
+                    <li>290°F dry-vapor steam sanitization</li>
+                    <li>Headliner & vent crevice detailing</li>
+                    <li>Odor elimination & ceramic fabric guard</li>
+                </ul>
+                <a href="#book" class="btn-outline">Book Interior</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="section alt-band">
+        <h2>Mirror-Finish Detail Work</h2>
+        <p class="section-sub">Close-up clarity, swirl-free clear coat, and deep gloss reflection.</p>
+        <div class="photo-grid">
+            <div class="photo-card"><img src="ojc_moto_vette%20logo.jpg" alt="Corvette gloss paint and emblem finish"></div>
+            <div class="photo-card"><img src="ojc_moto_indian%20logo.jpg" alt="Indian Motorcycle mirror tank reflection"></div>
+            <div class="photo-card"><img src="ojc_moto_bmw.jpg" alt="BMW emblem and chrome finish"></div>
+        </div>
+    </section>
+
+    <section id="book" class="section contact-section">
+        <h2>Request a Mobile Appointment</h2>
+        <p class="section-sub">Prefer to talk directly? Call or text <strong>1-234-567-8910</strong> anytime.</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Demo Form: On a live client site, this routes straight to the business owner\'s phone and email!');">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number (e.g., 1-234-567-8910)" required>
+            <input type="text" placeholder="Vehicle Year, Make & Model (e.g., 2023 Corvette C8)" required>
+            <textarea rows="3" placeholder="Which package are you interested in?"></textarea>
+            <button type="submit" class="btn-primary">Reserve Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Example Site Auto Detailing &bull; Placeholder Line: 1-234-567-8910</p>
+        <p class="footer-credit">Concept Architecture designed &amp; built by <a href="https://github.io">Oliver Coe Media</a></p>
+    </footer>
+
+</body>
+</html>
 
